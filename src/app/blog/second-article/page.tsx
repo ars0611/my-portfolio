@@ -1,0 +1,1 @@
+// article about my becoming a blown AtCoderer 

@@ -1,3 +1,15 @@
+# My Portfolio Site(*開発中*)   
+ポートフォリオサイト兼個人ブログサイトです。Next.jsのチュートリアルを通して学んだことのアウトプットとして、まずは静的なWebサイトを作ろうという目的で
+制作し始めました。   
+## 技術スタック
+- Next.js    
+- tailwindCSS   
+- tsParticles   
+   
+---   
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

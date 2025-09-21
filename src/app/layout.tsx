@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ParticlesBackground } from "./ui/ParticlesBackground";
+import { NavigationBar } from "./ui/NavigationBar";
 
 
 
@@ -13,10 +14,10 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
   return (
     <html lang="ja">
       <body>
-        <header className="relative z-10 bg-white text-center">portfolio</header>
+        <NavigationBar />
         <ParticlesBackground />
-        <main className="relative z-10">{children}</main>
-        <footer className="relative z-10 bg-white text-center">navbar</footer>
+        <main className="relative z-10 pt-32">{children}</main>
+        
       </body>
     </html>
   );

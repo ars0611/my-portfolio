@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ParticlesBackground } from "./ui/ParticlesBackground";
 import { NavigationBar } from "./ui/NavigationBar";
+import { ResendForm } from "./ui/ResendForm";
 
 
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
         <main className="relative z-10 pt-32">{children}</main>
         
       </body>
+      <footer><ResendForm /></footer>
     </html>
   );
 }

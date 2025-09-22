@@ -28,14 +28,14 @@ export function ParticlesBackground() {
         () => ({
             background: {
                 color: {
-                    value: "#002b0bff",
+                    value: "#001305ff",
                 },
             },
             fpsLimit: 120,
             interactivity: {
                 events: {
                     onClick: {
-                        enable: true,
+                        enable: false,
                         mode: "push",
                     },
                     onHover: {
@@ -55,10 +55,10 @@ export function ParticlesBackground() {
             },
             particles: {
                 color: {
-                    value: "#ffffff",
+                    value: "#7a7a7aff",
                 },
                 links: {
-                    color: "#ffffff",
+                    color: "#7a7a7aff",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,

@@ -18,9 +18,9 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
         <NavigationBar />
         <ParticlesBackground />
         <main className="relative z-10 pt-32">{children}</main>
-        
+        <footer><ResendForm /></footer>
       </body>
-      <footer><ResendForm /></footer>
+      
     </html>
   );
 }

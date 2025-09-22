@@ -16,7 +16,7 @@ export function NavigationBar() {
     const pathname = usePathname(); // 現在のパスを取得
     return(
             <nav className="fixed top-0 left-0 w-full z-50 p-8"> {/* navigation bar を画面上部に固定 */}
-                <div className = "text-white text-xl flex justify-between bg-gray-200/30 backdrop-blur-lg rounded-md border border-[#D4CEFF] shadow-lg"> {/* 背景を半透明にしてぼかし効果を追加 */}
+                <div className = "text-xl flex justify-between bg-gray-200/30 backdrop-blur-lg rounded-md border border-[#D4CEFF] shadow-lg"> {/* 背景を半透明にしてぼかし効果を追加 */}
                     <a href="https://github.com/ars0611" target="_blank" rel="noopener noreferrer" className="flex items-left gap-2 hover:bg-green-400/40 rounded-md px-4 py-2">
                         <span className="text-[1.5rem]"><VscGithubInverted /></span>
                         <span className="hidden md:block">GitHub</span> {/* md以上の画面サイズで表示 i.e. 画面が十分小さい場合アイコンのみ表示 */}

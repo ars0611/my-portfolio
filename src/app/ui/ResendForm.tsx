@@ -16,7 +16,7 @@ export function ResendForm() {
                 alert("メールを送信しました。");
             }}
         >
-            <div className="text-white flex flex-col gap-2 p-4 bg-gray-200/30 backdrop-blur-lg rounded-md border border-[#D4CEFF] shadow-lg z-50">
+            <div className="flex flex-col gap-2 p-4 bg-gray-200/30 backdrop-blur-lg rounded-md border border-[#D4CEFF] shadow-lg z-50">
                 <label htmlFor="name">お名前</label>
                 <input type="text" name="name" placeholder="" className="bg-gray-300 border p-2 rounded-md text-black" required />
                 <label htmlFor="email">メールアドレス</label>

@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode; }) {
   return (
     <html lang="ja">
-      <body>
+      <body className="min-h-screen flex flex-col">
         <NavigationBar />
         <ParticlesBackground />
-        <main className="relative z-10 pt-32">{children}</main>
+        <main className="relative z-10 pt-32 flex-1">{children}</main>
+      <footer className="bg-gray-400/30 text-white py-4 w-full text-center relative z-50">© 2025 Kyohei Yonehama</footer>
       </body>
-      
     </html>
   );
 }

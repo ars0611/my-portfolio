@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export function ChangingPhrase() {
     const phrases = [
             "Web エンジニア志望",
-            "Next.jsとTypeScript勉強中",
+            "TypeScript勉強中",
             "情報科学科 1年",
             "就職活動中",
             "コーヒーと競プロが好き"
@@ -15,10 +15,10 @@ export function ChangingPhrase() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setVisible(false); // フェードアウト
+            setVisible(false);
             setTimeout(() => {
-                setIndex((prevIndex) => (prevIndex + 1) % phrases.length); // 次のフレーズへ
-                setVisible(true); // フェードイン
+                setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+                setVisible(true);
             }, 500); // フェードアウト後にフレーズを変更
         }, 3000); // 3秒ごとに変更
 

@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
         <NavigationBar />
         <ParticlesBackground />
         <main className="relative z-10 pt-32 flex-1">{children}</main>
-      <footer className="bg-gray-400/30 py-4 w-full text-center relative z-50">© 2025 Kyohei Yonehama</footer>
+      <footer className="bg-gray-400/30 py-4 mt-4 w-full text-center relative z-50">© 2025 Kyohei Yonehama</footer>
       </body>
     </html>
   );

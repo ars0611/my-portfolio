@@ -5,7 +5,7 @@ import { sendEmailAction } from "../lib/sendMail";
 export function ResendForm() {
     function SendButton() {
         const { pending } = useFormStatus();
-        return <button type="submit" disabled={pending}>{pending ? "送信中..." : "送信"}</button>;
+        return <button type="submit" className="bg-green-400/40 rounded-md px-4 py-2 hover:cursor-pointer" disabled={pending}>{pending ? "送信中..." : "送信"}</button>;
     }
 
     return(

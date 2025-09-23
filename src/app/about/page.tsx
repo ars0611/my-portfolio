@@ -1,9 +1,11 @@
 // my profile(name, career, hobby, etc...)
+import { AboutMe } from "../ui/AboutMe";
+
 
 export default function About() {
     return (
         <div>
-            <h1>About Me</h1>
+            <AboutMe />
         </div>
     );
 }

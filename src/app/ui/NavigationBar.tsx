@@ -2,12 +2,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { VscGithubInverted } from "react-icons/vsc"; 
-import { GoHome, GoTools, GoPerson, GoMail, GoFileZip } from "react-icons/go";
+import { GoHome, GoTools, GoPerson, GoMail, GoFileZip, GoSponsorTiers } from "react-icons/go";
 
 const pages = [
     { name: "Home", path: "/", icon: <GoHome /> },
     { name: "About", path: "/about", icon: <GoPerson /> },
-    { name: "Engineering", path: "/engineering", icon: <GoTools /> },
+    { name: "Portfolio", path: "/portfolio", icon: <GoSponsorTiers /> },
     { name: "Blog", path: "/blog", icon: <GoFileZip /> },
     { name: "Contact", path: "/contact", icon: <GoMail /> },
 ];

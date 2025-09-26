@@ -7,7 +7,7 @@ export function ChangingPhrase() {
             "TypeScript勉強中",
             "情報科学科 1年",
             "就職活動中",
-            "コーヒーと競プロが好き"
+            "競プロer"
         ];
 
     const [Index, setIndex] = useState(0); // 現在のフレーズのインデックス
@@ -26,11 +26,11 @@ export function ChangingPhrase() {
     }, []);
 
     return (
-        <div className="pt-16">
+        <div className="text-[42px] pt-16">
             <span
                 key={Index}
                 className={`inline-block transition-opacity duration-500 ${visible ? 'opacity-100' : 'opacity-0'}`} 
-            >{/* フェードイン・アウト */}
+            >
                 <span className="bg-gradient-to-r from-[#FFF9B0] via-[#FFF176] to-[#FFD600] bg-clip-text text-transparent"> {/* グラデーションテキスト */}
                     {phrases[Index]}
                 </span>

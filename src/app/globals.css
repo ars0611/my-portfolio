@@ -1,9 +1,31 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-    --text-color: #ffffff;
+@layer base{
+    body{
+        @apply text-white
+    }
+    h1{
+        @apply text-2xl font-bold text-[#DFFF0B];
+    }
+    h2{
+        @apply text-xl font-bold;
+    }
 }
 
-body{
-    color: var(--text-color);
+@layer components {
+    .glass {
+        @apply bg-gray-200/30 backdrop-blur-lg rounded-md border border-[#D4CEFF] shadow-lg ; /* ぐらすもーふぃずむ */
+    }
+    .icon {
+        @apply inline-block mr-2;
+    }
+    .form-input{
+        @apply bg-gray-300 border p-2 rounded-md text-black;
+    }
+    .btn{
+        @apply hover:bg-green-400/40 rounded-md px-4 py-2;
+    }
 }

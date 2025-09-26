@@ -1,4 +1,4 @@
-// Email template for Resend
+// フォームから送られてくるメールのテンプレート
 interface EmailTemplateProps {
     name: string;
     email: string;
@@ -6,7 +6,7 @@ interface EmailTemplateProps {
     message: string;
 }
 
-export function MailTemplate ({ name, email, subject, message }: Readonly<EmailTemplateProps>) {
+export function MailTemplate ({ name, email, subject, message }: Readonly<EmailTemplateProps>) { // Readonlyで引数が変更されないようにする
     return(
         <div>
             <p>ポートフォリオサイトから以下のお問い合わせを受信しました。</p>

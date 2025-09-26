@@ -1,11 +1,11 @@
-// my profile(name, career, hobby, etc...)
-import { AboutMe } from "../ui/AboutMe";
+// プロフィールページ
+import { AboutMe } from "../ui/About/AboutMe";
 
 
 export default function About() {
     return (
-        <div>
+        <>
             <AboutMe />
-        </div>
+        </>
     );
 }

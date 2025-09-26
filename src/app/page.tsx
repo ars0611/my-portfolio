@@ -1,22 +1,23 @@
-// Welcome to my portfolio!
+// ウェルカムページ
+'use client';
 import Image from "next/image";
 import { ChangingPhrase } from "./ui/ChangingPhrase";
 
 
 export default function Home() {
+  const greeting = "`Hello, ${name}!`"
   return (
     <>
-    <div className="flex flex-col w-full md:flex-row h-full justify-around items-center">
-      <h1 className="text-[48px] font-bold">
-      Hello world!<br />
-      Welcome to my portfolio site.
-      <ChangingPhrase />
-      </h1>
-      <Image src="/Profile.tsx.png" alt="Profile.tsx" width={768} height={768} />
-    </div>
-    <div className="w-full mt-6 flex justify-center">
-      <s><strong className="text-center text-sm">デザイナー志望ではないので、配色やデザインについては大目に見てください！</strong></s>
-    </div>
+      <div className="flex flex-col w-full md:flex-row h-full justify-around items-center px-4">
+        <h1 className="text-[48px] text-white mb-8">
+          {greeting}<br />
+          <ChangingPhrase />
+        </h1>
+          <Image src="/ray-so-export.png" alt="Profile.tsx" width={720} height={720} className="w-[540px]" priority />
+      </div>
+      <div className="w-full my-8 flex justify-center">
+        <s><strong className="text-center text-sm">スマホで見るとレイアウトが崩れるかもしれません。PC推奨です。</strong></s>
+      </div>
     </>
   );
 }

@@ -1,3 +1,5 @@
+// tsParticlesを使ったアニメーション背景
+// 動的なUIなのでクライアントサイドでレンダリングする
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -108,5 +110,3 @@ export function ParticlesBackground() {
 
     return <></>;
 };
-
-// Ref: https://github.com/tsparticles/react

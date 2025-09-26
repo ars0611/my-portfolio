@@ -1,3 +1,4 @@
+// 学歴・職歴の紹介
 import { GoMortarBoard } from "react-icons/go";
 
 interface JourneyItem {
@@ -7,6 +8,7 @@ interface JourneyItem {
     description: string;
 }
 
+// 学歴・職歴のデータ
 const journey: JourneyItem[] = [
     {
         id: 1,
@@ -31,12 +33,12 @@ const journey: JourneyItem[] = [
 export function Journey() {
     return(
         <div>
-            <h1 className="text-2xl font-bold mb-4 text-[#DFFF0B] px-16"><GoMortarBoard className="inline-block mr-2" />キャリア</h1>
-            <div className="bg-gray-200/30 backdrop-blur-lg rounded-md border border-[#D4CEFF] shadow-lg mx-16 mb-4 p-4">
+            <h1 className="mb-4 px-16"><GoMortarBoard className="icon" />キャリア</h1>
+            <div className="glass mx-16 mb-8 p-4">
                 <ul className="list-disc px-8">
                     {journey.map((item) => (
                         <li key={item.id} className="mb-4">
-                            <h2 className="text-xl font-bold">{item.title}</h2>
+                            <h2>{item.title}</h2>
                             <p className="text-sm text-gray-400">{item.period}</p>
                             <p>{item.description}</p>
                         </li>

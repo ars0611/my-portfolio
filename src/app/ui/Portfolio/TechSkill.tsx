@@ -1,3 +1,4 @@
+// 技術スタックの紹介
 import { GoTools } from "react-icons/go";
 import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiPython, SiReact, SiNextdotjs, SiGit } from "react-icons/si";
 
@@ -9,6 +10,7 @@ interface Skill {
     description: string;
 }
 
+// 技術スタックのデータ
 const skills: Skill[] = [
     {
         id: 1,
@@ -64,28 +66,30 @@ const skills: Skill[] = [
 
 export function TechSkill() {
     return(
-        <div>
-            <h1 className="text-2xl font-bold mb-4 text-[#DFFF0B] px-16"><GoTools className="inline-block mr-2" />技術スタック</h1>
-            <div className="bg-gray-200/30 backdrop-blur-lg rounded-md border border-[#D4CEFF] shadow-lg mx-16 mb-4 p-4">
+        <>
+            
+            <h1 className="mb-4 px-16"><GoTools className="inline-block mr-2" />技術スタック</h1>
+            <div className="glass mx-16 mb-8 p-4">
+                <strong className="px-8 my-4">※ここでのレベルとは、僕の中での相対的なスキルの高さを示しています。</strong>
                 <ul className="list-none px-8">
                     {skills.map((item) => (
                         <li key={item.id} className="mb-4">
                             <div className="flex items-center mb-1">
                                 <span className="text-[1.5rem]">{item.icon}</span>
-                                <h2 className="text-xl font-bold">{item.name}</h2>
+                                <h2>{item.name}</h2>
                             </div>
                             <p className="text-sm text-gray-400">レベル: {item.level}</p>
-                            {/* レベルバー  Copilotによる実装*/}
-                            <div className="w-full bg-gray-300/40 rounded-full h-1 overflow-hidden">
+                            {/* レベルバー  */}
+                            <div className="w-full bg-gray-300/40 rounded-full h-1 overflow-hidden">{/* 外枠 */}
                                 <div
                                     className="h-1 rounded-full"
                                     role="progressbar"
                                     aria-valuenow={item.level}
-                                    aria-valuemin={1}
-                                    aria-valuemax={5}
-                                    style={{
-                                        width: `${(item.level / 5) * 100}%`,
-                                        background: "linear-gradient(90deg,#FFF9B0,#FFD600)",
+                                    aria-valuemin={1} // 最小値
+                                    aria-valuemax={5} // 最大値
+                                    style={{ // 内枠
+                                        width: `${(item.level / 5) * 100}%`, // レベルに応じた幅
+                                        background: "linear-gradient(90deg,#FFF9B0,#FFD600)", // 黄色のグラデーション
                                     }}
                                 />
                             </div>
@@ -94,6 +98,6 @@ export function TechSkill() {
                     ))}
                 </ul>
             </div>
-        </div>
+        </>
     )
 }

@@ -1,3 +1,4 @@
+// 外部リンクの紹介
 import { BsTwitter } from "react-icons/bs";
 import { GoPaperclip, GoRocket } from "react-icons/go";
 import { VscGithubInverted } from "react-icons/vsc";
@@ -10,6 +11,7 @@ interface ExternalLink {
     description: string;
 }
 
+// 外部リンクのデータ
 const ExternalLinks: ExternalLink[] = [
     {
     id: 1,
@@ -35,10 +37,10 @@ const ExternalLinks: ExternalLink[] = [
 export function ExternalLink() {
     return(
         <>
-        <h1 className="text-2xl font-bold mb-4 text-[#DFFF0B] px-32"><GoPaperclip className="inline-block mr-2" />各種リンク</h1>
-        <div className="bg-gray-200/30 backdrop-blur-lg rounded-md border border-[#D4CEFF] shadow-lg mx-32 mb-4">
+        <h1 className=" mb-4 px-16"><GoPaperclip className="icon" />各種リンク</h1>
+        <div className="glass mx-16 mb-8 p-4">
             {ExternalLinks.map(link => (
-                <a key={link.id} href={link.url} className="flex items-center p-4 hover:bg-green-400/40 rounded-md m-4" target="_blank" rel="noopener noreferrer">
+                <a key={link.id} href={link.url} className="flex items-center btn" target="_blank" rel="noopener noreferrer"> {/* target=_blankを使うならrelは脆弱性対策で必須。これも初知りだ。 */}
                     <div className="text-[1.5rem]">{link.icon}</div>
                     <div className="ml-4">
                         <h3 className="font-bold">{link.name}</h3>

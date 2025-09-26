@@ -1,1 +1,1 @@
-// article about my first deployment, my portfolio
+// ブログデプロイ記事

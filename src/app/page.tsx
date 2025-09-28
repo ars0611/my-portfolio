@@ -5,7 +5,7 @@ import { ChangingPhrase } from "./ui/ChangingPhrase";
 
 
 export default function Home() {
-  const greeting = "`Hello, ${name}!`"
+  const greeting :string = "`Hello, ${name}!`"
   return (
     <>
       <div className="flex flex-col w-full md:flex-row h-full justify-around items-center px-4">

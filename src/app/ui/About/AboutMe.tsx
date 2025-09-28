@@ -13,17 +13,17 @@ export function AboutMe() {
             <div className="glass p-4 mx-16">
                 <h2 className=" mb-2">米浜 匡平</h2><br />
                 <p>情報科学専門学校 1年生</p><br />
-                <p>高校時代、数学が好きでそのまま大学も数学科へ進むも、大学数学が肌に合わず挫折。2025年4月から進路を変更し、2年制の専門学校でプログラミングを学んでいます。</p><br />
-                <p>Web開発に興味があり、現在はReactやNext.jsを使った開発を学んでいます。フロントエンドメインで学んでいますが、バックエンドにも興味があるので今後はREST APIやデータベースについても学んでいきたいです。</p>
+                <p>高校時代、数学が好きでそのまま大学も数学科へ進むも、大学数学が肌に合わず挫折しました。2025年4月から進路を変更し、2年制の専門学校でプログラミングを学んでいます。</p><br />
+                <p>Web開発に興味があり、現在はReactやNext.jsを使った開発を学んでいます。フロントエンドをメインで学んでいますが、バックエンドにも興味があるので今後はREST APIやデータベースについても学んでいきたいです。</p>
             </div>
         </div>
 
         <h1 className="mb-4 px-16"><GoUnmute className="icon" />好きな曲</h1>
         <div className="flex flex-col md:flex-row items-center justify-center">
-            <div className="glass p-4 mb-8 mx-32">
+            <div className="glass p-4 mb-8 mx-16">
                 <iframe width="400" height="225" src="https://www.youtube.com/embed/OwLkGMBYL7I" title="[Alexandros] - 無心拍数 (MMV)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
-            <div className="glass p-4 mb-8 mx-32">
+            <div className="glass p-4 mb-8 mx-16">
                 <iframe width="400" height="225" src="https://www.youtube.com/embed/bCCRV3gMunY" title="ハンブレッダーズ「グー」Lyric Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
         </div>
@@ -32,7 +32,7 @@ export function AboutMe() {
         <div className="flex flex-col mb-8">
             <div className="glass mb-4 p-4 mx-16">
                 <h2 className="mb-2"><VscCoffee className="text-[1.5rem] icon" />コーヒー</h2>
-                <p>コーヒーが好きで、自宅ではハンドドリップで淹れています。帰宅後に一休みしてコーヒーを飲むことが日々の楽しみ。好きな豆はブラジル。苦味の強いコーヒーが好みです。</p>
+                <p>コーヒーが好きで、自宅ではハンドドリップで淹れています。帰宅後に一休みしてコーヒーを飲むことが日々の楽しみです。好きな豆はブラジルで、苦味の強いコーヒーが好みです。</p>
             </div>
             <div className="glass mb-4 p-4 mx-16">
                 <h2 className="mb-2"><GoRocket className="text-[1.5rem] icon" />競技プログラミング</h2>
@@ -42,7 +42,7 @@ export function AboutMe() {
 
         <h1 className="mb-4 px-16"><GoCrossReference className="icon" />一言</h1>
         <div className="glass p-4 mb-8 mx-16">
-            <p>目指すはつよつよエンジニア！好きを仕事にして人生を進めたい。</p>
+            <p>目指すはつよつよエンジニア！技術でめんどくさいを解決したいです。</p>
         </div>
         </>
 

@@ -16,7 +16,7 @@ const works: Work[] = [
         id: 1,
         title: "ポートフォリオサイト",
         date: "2025.09",
-        description: "Next.js使用して作成したポートフォリオサイト。自己紹介や個人ブログを掲載。",
+        description: "Next.js使用して作成したポートフォリオサイトです。自己紹介や個人ブログを掲載しています。",
         link: "https://example.com",
         github: "https://github.com/ars0611/my-portfolio"
     },
@@ -24,7 +24,7 @@ const works: Work[] = [
         id: 2,
         title: "AtCoder",
         date: "2025.07 - 現在",
-        description: "Highest Rate：455（茶）, Perf：1018（9/24現在）主にABCにPythonで参加。年内に緑色を目指す。",
+        description: "Highest Rate：522（茶）, Perf：1018（9/27現在）主にABCにPythonで参加しています。年内に緑色への昇格を目指します。",
         link: "https://atcoder.jp/users/ars0611",
         github: "https://github.com/ars0611/AtCoder"
     },

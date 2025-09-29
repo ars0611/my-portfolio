@@ -16,13 +16,7 @@ const achivements: Achievement[] = [
         title: "基本情報技術者試験 合格",
         date: "2025.06",
         description: "4月下旬から約2か月間、通学時間を利用して書籍と過去問を用いて独学で進めつつ、学校の授業で復習をすることで効率的に学習できました。",
-    },
-    {
-        id: 2,
-        title: "???",
-        date: "2025.XX",
-        description: "外部のハッカソンに参加し、開発経験を積みつつ受賞を目指します。"
-    },
+    }
 ];
 
 export function Achivement() {
@@ -31,8 +25,8 @@ export function Achivement() {
             <h1 className=" mb-4 px-16"><GoTrophy className="icon" />実績</h1>
             <div className="glass mx-16 mb-8 p-4">
                 <ul className="list-disc pl-8">
-                    {achivements.map((item) => (
-                        <li key={item.id} className="mb-4">
+                    {achivements.map((item, index) => (
+                        <li key={item.id} className="">
                             <h2>{item.title}</h2>
                             <p className="text-sm text-gray-400">{item.date}</p>
                             <p>{item.description}</p>

@@ -6,7 +6,8 @@ interface EmailTemplateProps {
     message: string;
 }
 
-export function MailTemplate ({ name, email, subject, message }: Readonly<EmailTemplateProps>) { // Readonlyで引数が変更されないようにする
+export function MailTemplate (params: Readonly<EmailTemplateProps>) { // Readonlyで引数が変更されないようにする
+    const { name, email, subject, message } = params;
     return(
         <div>
             <p>ポートフォリオサイトから以下のお問い合わせを受信しました。</p>

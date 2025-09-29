@@ -28,24 +28,32 @@ const journey: JourneyItem[] = [
         title: "情報科学専門学校 情報処理科（在学中）",
         description: "2025年4月から2年制の専門学校に進学し、プログラミングを学んでいます。資格取得やWeb開発を中心に学習中です。",
     },
+    {
+        id: 4,
+        period: "2027.04 - 20XX.YY ",
+        title: "？？？",
+        description: "現在就職活動中です。Web系企業を中心に応募しています。",
+    }
 ];
 
 export function Journey() {
     return(
-        <div>
-            <h1 className="mb-4 px-16"><GoMortarBoard className="icon" />キャリア</h1>
-            <div className="glass mx-16 mb-8 p-4">
-                <ul className="list-disc px-8">
-                    {journey.map((item) => (
-                        <li key={item.id} className="mb-4">
-                            <h2>{item.title}</h2>
-                            <p className="text-sm text-gray-400">{item.period}</p>
-                            <p>{item.description}</p>
-                        </li>
-                    ))}
-                </ul>
+        <>
+        <h1 className="mb-4 px-16"><GoMortarBoard className="icon" />キャリア</h1>
+        <div className="relative">
+            <div className="absolute inset-y-0 left-1/2 transform -translate-x-1/2 "> {/* 親。左右中央ぞろえ。 */}
+                <div className="w-1 bg-green-400 h-full opacity-80" /> {/* 縦線。親の高さいっぱいまでひいちゃおう。 */}
             </div>
-            
+            {journey.map(item => 
+                <div className="glass mx-16 mb-8 px-4 pt-4" key={item.id}>
+                    <div key={item.id} className="mb-4">
+                    <h2>{item.title}</h2>
+                    <p className="text-sm text-gray-400">{item.period}</p>
+                    <p>{item.description}</p>
+                    </div>
+                </div>
+            )}
         </div>
+        </>
     )
 }

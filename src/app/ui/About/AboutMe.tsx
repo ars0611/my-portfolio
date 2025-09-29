@@ -1,5 +1,5 @@
 // 自己紹介
-// このファイルの中身のデータはあんま増えないからmapで回さない
+// このページはいうほど変更しないのでハードコーディングでいいか
 import { GoPerson, GoUnmute, GoFlame, GoRocket, GoCrossReference } from "react-icons/go";
 import { VscCoffee } from "react-icons/vsc";
 import Image from "next/image";

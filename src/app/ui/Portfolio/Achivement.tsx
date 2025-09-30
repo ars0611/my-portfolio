@@ -24,7 +24,7 @@ export function Achivement() {
         <div>
             <h1 className=" mb-4 px-16"><GoTrophy className="icon" />実績</h1>
             <div className="glass mx-16 mb-8 p-4">
-                <ul className="list-disc pl-8">
+                <ul className="p-4">
                     {achivements.map((item, index) => (
                         <li key={item.id} className="">
                             <h2>{item.title}</h2>

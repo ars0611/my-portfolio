@@ -19,12 +19,12 @@ export function AboutMe() {
         </div>
 
         <h1 className="mb-4 px-16"><GoUnmute className="icon" />好きな曲</h1>
-        <div className="flex flex-col md:flex-row items-center justify-center">
-            <div className="glass p-4 mb-8 mx-16">
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/OwLkGMBYL7I" title="[Alexandros] - 無心拍数 (MMV)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <div className="flex flex-col md:flex-row items-center justify-center md:px-16">
+            <div className="glass p-4 mb-8 w-full max-w-[400px] md:mr-8">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/OwLkGMBYL7I" title="[Alexandros] - 無心拍数 (MMV)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="w-full aspect-video" allowFullScreen></iframe>
             </div>
-            <div className="glass p-4 mb-8 mx-16">
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/bCCRV3gMunY" title="ハンブレッダーズ「グー」Lyric Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <div className="glass p-4 mb-8 w-full max-w-[400px] md:ml-8">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/bCCRV3gMunY" title="ハンブレッダーズ「グー」Lyric Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" className="w-full aspect-video" allowFullScreen></iframe>
             </div>
         </div>
 

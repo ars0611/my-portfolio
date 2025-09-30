@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col w-full md:flex-row h-full justify-around items-center px-4">
-        <h1 className="text-[48px] text-white mb-8">
+        <h1 className="text-[48px] text-white mb-8 text-center md:text-left">
           {greeting}<br />
           <ChangingPhrase />
         </h1>

@@ -1,14 +1,8 @@
 'use client';
 import { useEffect, useState } from "react";
+import { phrases } from "../lib/MyData";
 
 export function ChangingPhrase() {
-    const phrases = [
-            "Web エンジニア志望",
-            "TypeScript勉強中",
-            "情報科学科 1年",
-            "就職活動中",
-            "競プロer"
-        ];
 
     const [Index, setIndex] = useState(0); // 現在のフレーズのインデックス
     const [visible, setVisible] = useState(true); // フェードイン・アウトの状態

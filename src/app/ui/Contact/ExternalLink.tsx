@@ -1,38 +1,6 @@
 // 外部リンクの紹介
-import { BsTwitter } from "react-icons/bs";
-import { GoPaperclip, GoRocket } from "react-icons/go";
-import { VscGithubInverted } from "react-icons/vsc";
-
-interface ExternalLink {
-    id: number;
-    name: string;
-    url: string;
-    icon: React.ReactNode;
-    description: string;
-}
-
-// 外部リンクのデータ
-const ExternalLinks: ExternalLink[] = [
-    {
-    id: 1,
-    name: "Twitter",
-    url: "https://x.com/heigineer",
-    icon: <BsTwitter />,
-    description: "競技プログラミングや開発の勉強などの合間にひとりごとをつぶやいてます。",
-}, {
-    id: 2,
-    name: "Github",
-    url: "https://github.com/ars0611",
-    icon: <VscGithubInverted />,
-    description: "私のプロジェクトやコードを公開しています。このサイトのソースコードもこちらで確認できます。",
-},{
-    id: 3,
-    name: "AtCoder",
-    url: "https://atcoder.jp/users/ars0611",
-    icon: <GoRocket />,
-    description: "競技プログラミングのプロフィールとコンテスト履歴はこちらで確認できます。",
-}];
-
+import { GoPaperclip } from "react-icons/go";
+import { ExternalLinks } from "../../lib/MyData";
 
 export function ExternalLink() {
     return(

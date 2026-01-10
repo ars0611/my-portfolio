@@ -1,7 +1,7 @@
 # My Portfolio Site  
 ポートフォリオサイトです。私の自己紹介や技術スタック、活動内容を記載しています。   
 Next.jsのチュートリアルで学んだことのアウトプットとして制作し、Vercelでデプロイしました。   
-参照：https://my-portfolio-git-master-ars0611s-projects.vercel.app/
+参照：[サイトに飛びます](https://kyoheiyonehama.vercel.app/)
 ## 技術スタック
 - Next.js    
 - TypeScript   

@@ -53,3 +53,21 @@ export interface BlogPost {
     src: string;
     link: string;
 }
+
+// AtCoderのAPIレスポンスの型
+export interface AtCoderHistory{
+    IsRated: boolean,
+    Place: number,
+    OldRating: number,
+    NewRating: number,
+    Performance: number,
+    InnerPerformance: number,
+    ContestScreenName: string,
+    ContestName: string,
+    ContestNameEn: string,
+    EndTime: string,
+}
+export interface HighestRecords{
+    highestRating: string,
+    highestPerformance: string
+}

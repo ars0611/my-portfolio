@@ -22,11 +22,9 @@ export async function sendMail(params: SendMailParams) {
             react: <MailTemplate name={params.name} email={params.email} subject={params.subject} message={params.message} />,
         });
     if (error) {
-        console.error('Failed to send email:', error);
         throw new Error('Failed to send email');
     }
     } catch (error) {
-        console.error('Error occurred while sending email:', error);
         throw error;
     }
 }

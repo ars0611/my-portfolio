@@ -14,6 +14,7 @@ export const phrases : Array<string> = [
             "Pythonista"
         ];
 
+
 // 活動のデータ
 export const works: Work[] = [
     {
@@ -22,14 +23,14 @@ export const works: Work[] = [
         date: "2025.09",
         description: "Next.js使用して作成したポートフォリオサイトです。自己紹介や個人ブログを掲載しています。",
         src: "/portfolio.png",
-        link: "https://example.com",
+        link: "https://kyoheiyonehama.vercel.app/",
         github: "https://github.com/ars0611/my-portfolio"
     },
     {
         id: 2,
         title: "AtCoder",
         date: "2025.07 - 現在",
-        description: "Highest Rate：522（茶）, Perf：1018（9/27現在）主にABCにPythonで参加しています。年内に緑色への昇格を目指します。",
+        description: "主にABCにPythonで参加しています。年内に水色への昇格を目指します。",
         src: "/AtCoder.png",
         link: "https://atcoder.jp/users/ars0611",
         github: "https://github.com/ars0611/AtCoder"

@@ -1,8 +1,12 @@
 // ウェルカムページ
-'use client';
 import Image from "next/image";
 import { ChangingPhrase } from "./ui/ChangingPhrase";
 
+export const metadata = {
+  title: "ポートフォリオサイト",
+  description: "ポートフォリオサイトのウェルカムページです。",
+  alternates: { canonical: "/"}
+}
 
 export default function Home() {
   const greeting :string = "`Hello, ${name}!`"

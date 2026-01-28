@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiPython, SiReact, SiNextdotjs, SiGit } from "react-icons/si";
+import { SiHtml5, SiJavascript, SiTypescript, SiPython, SiReact, SiNextdotjs, SiGit } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
 import { GoBook, GoRocket } from "react-icons/go";
 import { VscGithubInverted } from "react-icons/vsc";

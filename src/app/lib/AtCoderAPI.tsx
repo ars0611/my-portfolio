@@ -8,7 +8,7 @@ function secondsUltilNextMondayJST(hour = 0, minute = 0) {
     const now = new Date(Date.now() + JST_OFFSET_MS); // JSTに寄せる
     const day = now.getUTCDay();
     const targetDay = 1; // 月曜日
-    let daysUntil = (targetDay - day + 7) % 7; // 次の月曜までの日にち
+    const daysUntil = (targetDay - day + 7) % 7; // 次の月曜までの日にち
     const target = new Date(Date.UTC( // 今日の0時
         now.getUTCFullYear(),
         now.getUTCMonth(),
